@@ -1,0 +1,6 @@
+rootProject.name = 'trading-exchange'
+include 'exchange-client'
+include 'exchange-core'
+include 'exchange-matching-engine'
+include 'exchange-cache'
+

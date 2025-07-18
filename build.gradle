@@ -1,0 +1,35 @@
+plugins {
+    id 'java'
+}
+
+jar {
+    enabled = true
+}
+
+group = 'com.beta.signal.trading.exchange'
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.projectlombok:lombok:1.18.30'
+    annotationProcessor 'org.projectlombok:lombok:1.18.30'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.30'
+    testImplementation 'org.projectlombok:lombok:1.18.30'
+
+    implementation 'org.apache.commons:commons-lang3:3.12.0'
+
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+subprojects {
+    dependencies {
+    }
+}
+
+test {
+    useJUnitPlatform()
+}

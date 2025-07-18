@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.beta.signal.trading.exchange'
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(':exchange-core')
+
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}
