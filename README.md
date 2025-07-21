@@ -16,7 +16,8 @@ This project implements a matching engine for a trading exchange, supporting sta
 - **Visible Quantity**: Only a part of the iceberg order is visible in the order book.
 - **Hidden Quantity**: The remaining quantity is hidden and revealed as the visible part is filled.
 - **Refresh**: When the visible quantity is consumed, it is replenished from the hidden quantity until the order is fully filled.
-- **Matching**: For iceberg orders, the visible portion is treated as fully consumed after a trade, even if the trade quantity is less, and the order is refreshed immediately.
+- **Matching**: For iceberg orders, the visible portion is treated as fully consumed after a trade, even if the trade quantity is less, and the order is refreshed
+  immediately.
 
 For more details, see [Trading Technologies: Iceberg Orders](https://library.tradingtechnologies.com/trade/tto-iceberg-order.html).
 
